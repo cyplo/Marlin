@@ -195,7 +195,8 @@
   #define PID_dT ((OVERSAMPLENR * 8.0)/(F_CPU / 64.0 / 256.0)) //sampling period of the temperature routine
 
 // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
-// after autoconf
+// Use M303 for autotune new setup, put values here afterwards
+// 
     #define  DEFAULT_Kp 38.67
     #define  DEFAULT_Ki 3.62
     #define  DEFAULT_Kd 103.28
