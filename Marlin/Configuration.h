@@ -141,7 +141,7 @@
 // 147 is Pt100 with 4k7 pullup
 // 110 is Pt100 with 1k pullup (non standard)
 
-#define TEMP_SENSOR_0 1
+#define TEMP_SENSOR_0 5
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_BED 4
@@ -195,10 +195,10 @@
   #define PID_dT ((OVERSAMPLENR * 8.0)/(F_CPU / 64.0 / 256.0)) //sampling period of the temperature routine
 
 // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
-// Ultimaker
-    #define  DEFAULT_Kp 22.2
-    #define  DEFAULT_Ki 1.08
-    #define  DEFAULT_Kd 114
+// after autoconf
+    #define  DEFAULT_Kp 38.67
+    #define  DEFAULT_Ki 3.62
+    #define  DEFAULT_Kd 103.28
 
 // MakerGear
 //    #define  DEFAULT_Kp 7.0
@@ -494,7 +494,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 // default settings
 
 // default extruder steps per unit for 400 steps/revolution motor + 47/9 wade extruder
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {176, 176, 3846, 1480 }  
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {98, 98, 3846, 1480 }  
 #define DEFAULT_MAX_FEEDRATE          {500, 500, 5, 25}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {9000,9000,100,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
