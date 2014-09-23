@@ -166,7 +166,7 @@
 // When temperature exceeds max temp, your heater will be switched off.
 // This feature exists to protect your hotend from overheating accidentally, but *NOT* from thermistor short/failure!
 // You should use MINTEMP for thermistor short/failure protection.
-#define HEATER_0_MAXTEMP 275
+#define HEATER_0_MAXTEMP 290
 #define HEATER_1_MAXTEMP 275
 #define HEATER_2_MAXTEMP 275
 #define BED_MAXTEMP 150
@@ -197,9 +197,10 @@
 // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 // Use M303 for autotune new setup, put values here afterwards
 // 
-    #define  DEFAULT_Kp 38.67
-    #define  DEFAULT_Ki 3.62
-    #define  DEFAULT_Kd 103.28
+
+    #define  DEFAULT_Kp 35.76
+    #define  DEFAULT_Ki 3.31
+    #define  DEFAULT_Kd 96.68
 
 // MakerGear
 //    #define  DEFAULT_Kp 7.0
