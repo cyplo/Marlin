@@ -496,7 +496,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 // default settings
 
 // default extruder steps per unit for 400 steps/revolution motor + 47/9 wade extruder
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {98, 98, 3846, 1480 }  
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {98, 98, 962, 1480 }  
 #define DEFAULT_MAX_FEEDRATE          {500, 500, 5, 25}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {9000,9000,100,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
@@ -511,7 +511,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 
 // The speed change that does not require acceleration (i.e. the software might assume it can be done instantaneously)
 #define DEFAULT_XYJERK                20.0    // (mm/sec)
-#define DEFAULT_ZJERK                 0.4     // (mm/sec)
+#define DEFAULT_ZJERK                 0.0     // (mm/sec)
 #define DEFAULT_EJERK                 5.0    // (mm/sec)
 
 //===========================================================================
